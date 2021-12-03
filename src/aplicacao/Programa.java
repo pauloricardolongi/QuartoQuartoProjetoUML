@@ -1,9 +1,15 @@
 package aplicacao;
 
+
+import entidades.ContaEmpresarial;
+
 public class Programa {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		ContaEmpresarial conta = new ContaEmpresarial();
+
+		
+		
 
 	}
 
