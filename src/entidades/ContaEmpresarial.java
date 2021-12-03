@@ -23,6 +23,7 @@ public class ContaEmpresarial extends Conta {
 	public void emprestimo(double montante) {
 		
 		if (montante <= limiteEmprestimo)
-		    deposito (montante);
+		    saldo = saldo + montante - 10.0;
+		
 	}
 }
