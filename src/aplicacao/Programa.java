@@ -1,27 +1,22 @@
 package aplicacao;
 
 import entidades.Conta;
-import entidades.ContaEmpresarial;
 import entidades.ContaPoupanca;
 
 public class Programa {
 
 	public static void main(String[] args) {
 		
-		Conta acc1 = new Conta(1001,"Alex", 1000.0);
-		acc1.saque(200.0);
-		System.out.println(acc1.getSaldo());
+		Conta x= new Conta(1020, "Alex",1000.0);
 		
-		Conta acc2= new ContaPoupanca(1002,"Maria", 1000.0, 0.01);
-		acc2.saque(200.0);
-		System.out.println(acc2.getSaldo());
+		Conta y = new ContaPoupanca(1023, "Maria",1000.0,0.01);
 		
-		Conta acc3 = new ContaEmpresarial(1003, "Jose",1000.0,500.0);
-		acc3.saque(200.0);
-		System.out.println(acc3.getSaldo());
+		x.saque(50.0);
+		y.saque(50.0);
 		
-				
 		
+		System.out.println(x.getSaldo());		
+		System.out.println(y.getSaldo());
 	}
 
 }
